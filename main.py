@@ -11,4 +11,4 @@ def read_root():
 # Define another endpoint with a path parameter
 @app.get("/items/{item_id}")
 def read_item(item_id: int, q: str = None):
-    return {"item_id": item_id,
+    return {"item_id": item_id, "query": q}
